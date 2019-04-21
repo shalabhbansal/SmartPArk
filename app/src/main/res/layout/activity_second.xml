@@ -7,12 +7,33 @@
     tools:context=".SecondActivity"
     android:background="#3F51B5"
     >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/jsslo"
+        android:layout_margin="30dp"
+        android:layout_alignParentRight="true"
+        />
 <ImageView
     android:layout_width="250dp"
-    android:layout_height="500dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
     android:layout_centerHorizontal="true"
     android:src="@drawable/smartpark"
+    android:id="@+id/image_park"
     />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/pacifico"
+        android:text="THE COMPLETE PARKING SOLUTIONS "
+        android:layout_below="@id/image_park"
+        android:textSize="15sp"
+        />
 
 
 </RelativeLayout>
