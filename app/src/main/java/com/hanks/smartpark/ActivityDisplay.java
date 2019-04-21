@@ -10,4 +10,13 @@ public class ActivityDisplay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
     }
+
+    @Override
+
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
+    }
 }
+
+
