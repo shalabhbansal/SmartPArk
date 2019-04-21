@@ -8,26 +8,29 @@
     android:background="#fdf">
 
     <LinearLayout
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="horizontal">
     <View
+        android:id="@+id/occupied"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bubble"
+        android:background="@drawable/bubble_parked"
         android:layout_weight="1"
         android:layout_margin="5dp"/>
         <View
+            android:id="@+id/approaching"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bubble"
+            android:background="@drawable/bubble_approaching"
             android:layout_weight="1"
             android:layout_margin="5dp"/>
         <View
+            android:id="@+id/empty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bubble"
+            android:background="@drawable/bubble_empty"
             android:layout_weight="1"
             android:layout_margin="5dp"/>
     </LinearLayout>
@@ -36,6 +39,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@drawable/bubble"
-        android:layout_centerInParent="true"
-        android:layout_margin="5dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
