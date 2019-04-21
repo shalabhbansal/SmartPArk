@@ -35,6 +35,7 @@ android:background="#3F51B5"
     android:textSize="15sp"
     />
     <Button
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
